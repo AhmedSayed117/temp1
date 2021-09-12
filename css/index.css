@@ -16,7 +16,7 @@
     font-family: Tahoma ,Arial;
 }
 body{
-    height:5000px;
+    height:10000px;
 }
 
 .clear{
@@ -562,3 +562,42 @@ body{
 }
 
 /*end testimonials */
+
+/*start projects*/
+
+.projects{
+    padding: 5px;
+    margin-top: 125px;
+    overflow: hidden;
+}
+.buttons  {
+    margin-bottom:50px ;
+
+}
+.buttons button{
+    width: 70px;
+}
+.buttons span{
+    padding: 5px;
+    color: var(--maincolor);
+    margin: 5px;
+}
+
+.boxs .Box{
+    position: relative;
+    height: 205px;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    z-index: 100;
+}
+.boxs .Box .b{
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*End projects*/

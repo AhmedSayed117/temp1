@@ -1,3 +1,10 @@
+$("body").niceScroll({
+    cursorcolor:"#1abc9c",
+    cursorwidth:"7px",
+    cursorborder:"none",
+    zindex: [9999]
+});
+
 $(document).ready(function (){
     var list = $(".links ul li"),
         menue_list =$(".links-menu ul li");
@@ -40,7 +47,12 @@ $(document).ready(function (){
 
        $(".over").height($(".right .box").height()).width($(".right .box").width());
         $(".overl").height($(".testimonials").height()).width($(".testimonials").width());
+        $(".boxs .Box .ov").height($(".boxs img").height()).width($(".boxs img").width());
    });
+
+
+
+
 
    $(".navbar .menu").on('click',function (){
        $("links").slideToggle(2000);
@@ -114,8 +126,29 @@ $(document).ready(function (){
                });
            }
         });
-            console.log("a");
 
     }());
+
+    $(".boxs .Box .ov").height($(".boxs .Box img").height()).width($(".boxs .Box img").width());
+
+
+    $(".boxs .Box img").on({
+        mouseenter :function (){
+            console.log($(this).next().firstChild);
+            $(this).next().css({
+                display: "block",
+                backgroundColor: "#1abc9c",
+                opacity: "70%",
+                overflow: "hidden",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0
+            });
+            (function (){
+                $("div.ov").fadeOut(3000);
+            }())
+         },
+    });
 
 });
