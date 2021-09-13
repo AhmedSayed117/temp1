@@ -7,7 +7,7 @@ $("body").niceScroll({
 
 $(document).ready(function (){
     var list = $(".links ul li"),
-        menue_list =$(".links-menu ul li");
+        menue_list = $(".links-menu ul li");
 
    list.on("click",function (){
        list.removeClass("active");
@@ -19,11 +19,9 @@ $(document).ready(function (){
         $(this).addClass("active");
     });
 
-
     $(window).on("resize",function (){
        var slider = $(".slider");
        slider.height($(window).height()).width($(window).width());
-
 
        slider.css({
            top: - $(".navbar").height()
@@ -45,28 +43,20 @@ $(document).ready(function (){
            marginLeft:((slider.width() - ($(".bx-wrapper p")).width())/2)
        });
 
-       $(".over").height($(".right .box").height()).width($(".right .box").width());
+        $(".over").height($(".right .box").height()).width($(".right .box").width());
         $(".overl").height($(".testimonials").height()).width($(".testimonials").width());
-        $(".boxs .Box .ov").height($(".boxs img").height()).width($(".boxs img").width());
    });
 
-
-
-
-
-   $(".navbar .menu").on('click',function (){
+    $(".navbar .menu").on('click',function (){
        $("links").slideToggle(2000);
 
    });
 
-
     var slider = $(".slider");
-
     slider.height($(window).height()).width($(window).width());
     slider.css({
         top: - $(".navbar").height()
     });
-
 
     $(".overlay").css({
         top:0,
@@ -126,29 +116,29 @@ $(document).ready(function (){
                });
            }
         });
-
     }());
 
-    $(".boxs .Box .ov").height($(".boxs .Box img").height()).width($(".boxs .Box img").width());
-
-
-    $(".boxs .Box img").on({
-        mouseenter :function (){
-            console.log($(this).next().firstChild);
-            $(this).next().css({
-                display: "block",
-                backgroundColor: "#1abc9c",
-                opacity: "70%",
-                overflow: "hidden",
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0
-            });
-            (function (){
-                $("div.ov").fadeOut(3000);
-            }())
-         },
+    $(".projects ul li").on("click",function (){
+        $(".projects ul li").removeClass("selected");
+       $(this).addClass("selected");
     });
 
+    $(".projects li").on("click",function (){
+        $(".projects .Box").fadeOut(1000);
+
+        if($(this).data("value")==="mobile"){
+            $("[data-result=\"mobile\"]").fadeIn(1000);
+        }
+        else if($(this).data("value")==="coffee"){
+            $("[data-result=\"coffee\"]").fadeIn(1000);
+        }
+        else if($(this).data("value")==="video"){
+            $("[data-result=\"video\"]").fadeIn(1000);
+        }
+        else if($(this).data("value")==="fashion"){
+            $("[data-result=\"fashion\"]").fadeIn(1000);
+        }else{
+            $(".projects .Box").fadeIn(1000);
+        }
+    });
 });

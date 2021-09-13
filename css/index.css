@@ -1,202 +1,56 @@
 /* start main in templates */
-
 :root{
     --maincolor:#1abc9c;
     --pColor :#9b8d8d;
 }
-
 /* end main in templates */
-
 /* start All in templates */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Tahoma ,Arial;
 }
-body{
-/*     height:10000px; */
-}
-
 .clear{
     clear: both;
 }
-
-/*.container{*/
-/*    width: 1200px;*/
-/*    margin: auto;*/
-/*}*/
-
-/*!* media *!*/
-/*@media (min-width: 768px){*/
-/*    .container{*/
-/*        width: 750px;*/
-/*        overflow: hidden;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 992px){*/
-/*    .container{*/
-/*        width: 970px;*/
-/*        overflow: hidden;*/
-/*    }*/
-/*}*/
-
-
-/*@media (min-width: 1200px){*/
-/*    .container{*/
-/*        width: 1170px;*/
-/*        overflow: hidden;*/
-/*    }*/
-/*}*/
-
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media (min-width: 600px) {*/
-/*    .services .sec {*/
-/*        width: 100% !important;*/
-/*        overflow: hidden !important;*/
-/*    }*/
-
-/*    .services .sec .font {*/
-/*        display: block;*/
-/*        float: left;*/
-/*        width: 10%;*/
-/*        font-size: 55px;*/
-/*        color: var(--maincolor);*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .services .sec .content {*/
-/*        display: block;*/
-/*        float: left;*/
-/*        width: 19%;*/
-/*        overflow: hidden !important;*/
-/*    }*/
-/*    .ourTeam .left {*/
-/*        display: block !important;*/
-/*        width: 45% !important;*/
-/*        padding: 0 0 50px 25px !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .ourTeam .right {*/
-/*        width: 100% !important;*/
-/*        overflow: hidden !important;*/
-/*    }*/
-/*    .ourTeam .right .box {*/
-/*        float: none !important;*/
-/*        margin: 0 0 44px 127px !important;*/
-/*        width: calc(25% - 40px) !important;*/
-/*        padding: 5px !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-
-
-/*}*/
-
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media (max-width: 600px) {*/
-/*    .services .sec{*/
-/*        width: 100% !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .services .sec .font {*/
-/*        display: block !important;*/
-/*        float: left !important;*/
-/*        width: 10% !important;*/
-/*        font-size: 55px !important;*/
-/*        color: var(--maincolor);*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .services .sec .content {*/
-/*        display: block !important;*/
-/*        float: left !important;*/
-/*        width: 19% !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .ourTeam .left {*/
-/*        display: block !important;*/
-/*        width: 45% !important;*/
-/*        padding: 0 0 50px 25px !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .ourTeam .right {*/
-/*        width: 100% !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-/*    .ourTeam .right .box {*/
-/*        float: none !important;*/
-/*        margin: 0 0 44px 127px !important;*/
-/*        width: calc(25% - 40px) !important;*/
-/*        padding: 5px !important;*/
-/*        overflow: hidden !important;*/
-
-/*    }*/
-
-/*}*/
-
-/*!* Medium devices (landscape tablets, 768px and up) *!*/
-/*@media (min-width: 768px) {*/
-/*    .services .sec{*/
-/*        width: 50% !important;*/
-/*        overflow: hidden !important;*/
-/*    }*/
-
-/*    .ourTeam .left{*/
-/*        float: left !important;*/
-/*        display: inline-block !important;*/
-/*        width: 25% !important;*/
-/*    }*/
-
-/*    .ourTeam .right{*/
-/*        float: right !important ;*/
-/*        display: inline-block !important;*/
-/*        width: 75% !important;*/
-/*        overflow: hidden !important;*/
-/*    }*/
-/*    .ourTeam .right .box{*/
-/*        margin: 0 20px !important;*/
-/*        float: left !important;*/
-/*        width: calc(25% - 40px) !important;*/
-/*        padding: 5px !important;*/
-/*    }*/
-/*}*/
-
-/*!* Large devices (laptops/desktops, 992px and up) *!*/
-/*@media (min-width: 992px) {*/
-/*    .links{*/
-/*        display: inline-block !important;*/
-/*    }*/
-/*    .services .sec{*/
-/*        width: 33.33% !important;*/
-/*    }*/
-/*}*/
-
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-/*@media (min-width: 1200px) {*/
-/*    .services .sec{*/
-/*        width: 33.33% !important;*/
-/*    }*/
-/*}*/
-
 @media (max-width: 767px){
     .bx-controls-direction{
         display: none;
     }
 }
 
+@media (min-width: 768px){
+    .leftr {
+        width: 100%!important;
+    }
+    .leftr p{
+        padding-bottom: 50px;
+    }
+    .rightr{
+        width: 100% !important;
+    }
+    .ourTeam .right .box{
+        padding:0 !important;
+    }
+}
 
-/*end media*/
+@media (max-width: 768px){
+    .leftr {
+        width: 100%!important;
+    }
+    .leftr p{
+        padding-bottom: 50px;
+    }
+    .rightr{
+        width: 100% !important;
+    }
+    .ourTeam .right .box{
+        padding:0 !important;
+    }
+}
 
 /* end All in templates */
-
 /* start navbar templates */
 .navbar{
     /*overflow: hidden;*/
@@ -230,7 +84,6 @@ body{
     color: white;
     text-transform: capitalize;
 }
-
 .links ul,
 .links-menu ul{
     margin: 14px auto;
@@ -256,16 +109,13 @@ body{
     color: var(--maincolor) ;
     border-bottom: 2px solid var(--maincolor) ;
 }
-
 .links-menu{
-
     background-color: #DDD;
     width: 100%;
     display: none;
     position: absolute;
     left: 0;
     padding: 10px ;
-
     top: 100%;
 }
 .links-menu ul li{
@@ -279,10 +129,7 @@ body{
     color: black;
 }
 /* end navbar templates */
-
-
 /*start slider*/
-
 .slider{
     background-image: url("../img/cover.jpg");
     background-repeat: no-repeat;
@@ -328,19 +175,14 @@ body{
 .s{
     display: none;
 }
-
 /*end slider*/
-
-
 /* start services*/
-
 .services{
     width: 100%;
     overflow: hidden;
     position: relative;
     padding-top: 20px;
 }
-
 .services .Our_Services{
     padding: 0 0 20px 20px;
     font-size: 25px;
@@ -349,9 +191,7 @@ body{
 .services .sec{
     overflow: hidden;
     padding: 20px 2px 40px 5px ;
-
 }
-
 .services .sec .font{
     display: inline-block;
     font-size: 55px;
@@ -359,7 +199,6 @@ body{
     float: left;
     width: 20%;
 }
-
 .services .sec .content{
     display: block;
     float: right;
@@ -374,11 +213,8 @@ body{
     color: var(--pColor);
     padding:0 68px 0 0;
 }
-
 /* end services*/
-
 /* start our team*/
-
 .ourTeam{
     overflow: hidden;
     padding-top: 50px;
@@ -390,14 +226,11 @@ body{
     display: inline-block;
     width: 25%;
 }
-
-
 .ourTeam .left h3{
     margin-bottom: 35px;
     font-size: 25px;
     font-weight: bold;
     position: relative;
-
 }
 .ourTeam .left h3::after{
     content: "";
@@ -408,42 +241,10 @@ body{
     top: 32px;
     left: 0;
 }
-
 .ourTeam .left p{
     font-size: 16px;
     color: var(--pColor);
 }
-
-@media (min-width: 768px){
-    .leftr {
-        width: 100%!important;
-    }
-    .leftr p{
-        padding-bottom: 50px;
-    }
-    .rightr{
-        width: 100% !important;
-    }
-    .ourTeam .right .box{
-        padding:0 !important;
-    }
-}
-
-@media (max-width: 768px){
-    .leftr {
-        width: 100%!important;
-    }
-    .leftr p{
-        padding-bottom: 50px;
-    }
-    .rightr{
-        width: 100% !important;
-    }
-    .ourTeam .right .box{
-        padding:0 !important;
-    }
-}
-
 .ourTeam .right{
     float: right;
     display: inline-block;
@@ -466,14 +267,12 @@ body{
     overflow: hidden;
     z-index: 10;
 }
-
 .ourTeam .right .box:hover .over{
     background-color: var(--maincolor);
     opacity: 90%;
     position: absolute;
     z-index: 11;
 }
-
 .ourTeam .right .box p{
     position: relative;
     z-index: 12;
@@ -489,12 +288,9 @@ body{
     background: white;
     top: 22px;
     left: 34px;
-
 }
 /* end our team*/
-
 /*start testimonials*/
-
 .testimonials{
     position: relative;
     background: url("../img/cover2.png") no-repeat;
@@ -505,7 +301,6 @@ body{
     margin-top: 100px;
     height: 400px;
     z-index: 50;
-
 }
 .testimonials .overl{
     background-color: rgba(0,0,0,0.7);
@@ -524,7 +319,6 @@ body{
     padding-bottom: 20px;
     display: block;
 }
-
 .testimonials_content h2::after {
     content: "";
     position: absolute;
@@ -533,7 +327,6 @@ body{
     top: 100%;
     left: 30%;
 }
-
 .testimonials_content p{
     position: relative;
     z-index: 52;
@@ -543,7 +336,6 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 .testimonials_content span{
     position: relative;
     z-index: 52;
@@ -552,52 +344,131 @@ body{
     font-size: 15px;
     font-weight: bold;
 }
-
 .slid div{
     display: none;
 }
-
 .slid div.active{
     display: block;
 }
-
 /*end testimonials */
 
 /*start projects*/
-
 .projects{
-    padding: 5px;
-    margin-top: 125px;
-    overflow: hidden;
+    padding: 10px 0;
 }
-.buttons  {
-    margin-bottom:50px ;
-
+.projects ul{
+    font-size: 18px;
+    margin: 30px 0;
+    list-style: none;
 }
-.buttons button{
-    width: 70px;
+.projects ul li{
+    color: black;
+    display:inline-block;
+    padding: 3px 15px;
+    border: none;
+    cursor: pointer;
 }
-.buttons span{
-    padding: 5px;
-    color: var(--maincolor);
-    margin: 5px;
+.projects ul li.selected{
+    background-color: var(--maincolor);
+    color: white;
 }
-
-.boxs .Box{
+.projects .Box{
+    margin-bottom: 30px;
     position: relative;
-    height: 205px;
-    padding: 0;
-    overflow: hidden;
-    margin: 0 0 40px 0;
     z-index: 100;
 }
-.boxs .Box .b{
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
+.projects .Box img{
+    min-height: 200px;
 }
-
+.projects .Box:hover .ov{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 15px;
+    background-color: var(--maincolor);
+    opacity: 0.7;
+    width: calc(100% - 30px);
+    height: 100%;
+    z-index: 101;
+}
+.projects .Box:hover span,
+.projects .Box:hover i{
+    display: block !important;
+}
+.projects .Box i{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    color: #b11212;
+    z-index: 200;
+    font-size: 23px;
+    cursor: pointer;
+}
+.projects .Box span{
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    z-index: 102;
+}
+.projects .Box span,
+.projects .Box i{
+    display: none;
+}
 /*End projects*/
+/*start about */
+.about{
+    background-color: #232323;
+    padding-bottom: 70px;
+}
+.about .ab{
+margin-top: 70px;
+}
+.about h2{
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+.about .p{
+    color: #666;
+}
+.about .icons i{
+    color: white;
+    font-size: 30px;
+    margin: 25px 10px 25px 0;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.f span{
+    color: #666;
+}
+.f d{
+    color: var(--maincolor);
+}
+.ss span{
+    padding: 5px;
+    color: white;
+    border: 1px solid #DDD;
+}
+.ab img{
+    max-width: 110px;
+}
+.th p,
+.th span{
+    color: white;
+}
+.sd span{
+    display: block;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+/* end about*/
